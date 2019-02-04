@@ -6,13 +6,68 @@
 */
 
 /*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/IRANSansWeb(FaNum)_Bold.eot');
+  src: url('../fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
+     url('../fonts/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+     url('../fonts/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/IRANSansWeb(FaNum)_Medium.eot');
+  src: url('../fonts/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
+     url('../fonts/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
+     url('../fonts/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/IRANSansWeb(FaNum)_Light.eot');
+  src: url('../fonts/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
+     url('../fonts/IRANSansWeb(FaNum)_Light.woff') format('woff'),
+     url('../fonts/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/IRANSansWeb(FaNum)_UltraLight.eot');
+  src: url('../fonts/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
+     url('../fonts/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),
+     url('../fonts/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IRANSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/IRANSansWeb(FaNum).eot');
+  src: url('../fonts/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+     url('../fonts/IRANSansWeb(FaNum).woff2') format('woff2'),
+     url('../fonts/IRANSansWeb(FaNum).woff') format('woff'),
+     url('../fonts/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: "IRANSans", sans-serif;
 }
 
 a {
@@ -39,7 +94,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -168,7 +223,7 @@ h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -216,7 +271,7 @@ h6 {
 }
 
 .nav-menu > li {
-  float: left;
+  float: right;
 }
 
 .nav-menu li:hover > ul,
@@ -255,7 +310,7 @@ h6 {
 /* Nav Meu Container */
 
 #nav-menu-container {
-  float: right;
+  float: left;
   margin: 0;
 }
 
@@ -266,7 +321,7 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: rgba(202, 206, 221, 0.8);
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   outline: none;
@@ -278,7 +333,7 @@ h6 {
 }
 
 .nav-menu > li {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .nav-menu > li > a:before {
@@ -510,7 +565,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
@@ -601,7 +656,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .about-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -858,15 +913,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 60px;
   overflow: hidden;
   border-radius: 50%;
-  float: left;
-  margin: 0 10px 10px 0;
+  float: right;
+  margin: 0 0 10px 10px;
 }
 
 #schedule .schedule-item .speaker img {
   height: 100%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  margin-left: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  margin-right: 50%;
   transition: all ease-in-out 0.3s;
 }
 
@@ -1123,17 +1178,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 18px 0;
   display: block;
   position: relative;
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 #faq #faq-list i {
   font-size: 24px;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 16px;
 }
 
@@ -1412,7 +1467,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   font-weight: 700;
   color: #fff;
 }
@@ -1426,7 +1481,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "IRANSans", sans-serif;
   color: #fff;
 }
 
